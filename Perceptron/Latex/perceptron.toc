@@ -1,0 +1,14 @@
+\changetocdepth {4}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{INTRODU\IeC {\c C}\IeC {\~A}O}{3}{chapter*.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {DESENVOLVIMENTO}}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Separa\IeC {\c c}\IeC {\~a}o de Duas Classes Bidimensionais}{9}{section.1.1}
+\contentsline {section}{\numberline {1.2}Diagn\IeC {\'o}stico de Doen\IeC {\c c}a Card\IeC {\'\i }aca}{14}{section.1.2}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{CONCLUS\IeC {\~A}O}{18}{chapter*.3}
+\contentsline {section}{Bibliografia}{18}{chapter*.3}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Refer\^encias}{19}{section*.5}

@@ -1,0 +1,618 @@
+UNIVERSIDADE 
+ESTADUAL 
+DE 
+MONTES 
+CLAROS 
+
+
+Centro 
+de 
+Ciências 
+Exatas 
+e 
+Tecnológicas 
+Mestrado 
+em 
+Modelagem 
+Computacional 
+e 
+Sistemas 
+
+
+
+Marcos 
+Flávio 
+S. 
+V. 
+D’Angelo 
+Universidade 
+Estadual 
+de 
+Montes 
+Claros 
+Centro 
+de 
+Ciências 
+Exatas 
+e 
+Tecnológicas 
+-CCET 
+Mestrado 
+em 
+Modelagem 
+Computacional 
+e 
+Sistemas 
+Campus 
+Universitário 
+Professor 
+Darcy 
+Ribeiro 
+-Vila 
+Mauricéia 
+39401-089 
+-Montes 
+Claros 
+-MG 
+-BRASIL 
+Tel.: 
+38-3229 
+8273 
+email: 
+marcos.dangelo@unimontes.br 
+
+
+Montes Claros, 28 dejunho de 2017. 
+
+Inteligência 
+Computacional 
+
+
+2o 
+e3o 
+Projetos 
+Práticos 
+
+
+Marcos 
+Flávio 
+Silveira 
+Vasconcelos 
+D’Angelo 
+
+
+
+Projeto 
+Prático 
+02 
+
+
+Para a confecçãode umprocessadordeimagensde ressonância magnética observou-seque a 
+variável{y},que mede a energia absorvidado sistema,poderia ser estimada apartirda medição 
+de três outrasgrandezas{x1 
+,x2 
+,x3 
+}. Entretanto, emfunçãoda complexidadedoprocesso, sabe-
+se que este mapeamento é de difícil obtenção por técnicas convencionais, sendo que o modelo 
+matemático disponível para sua representação tem fornecido resultados insatisfatórios. 
+
+Assim, a equipe de engenheiros e cientistas pretende utilizar um Perceptron 
+Multicamadas 
+como um aproximador universal de funções, tendo-se como objetivo final a estimação(após o 
+treinamento) da energia absorvida{y} em função dos valores de x1 
+,x2 
+ex3 
+. A topologia da rede 
+a ser implementada, constituída de duas camadas neurais, está ilustrada na figura 1. 
+
+x1 
+
+x2 
+
+1 
+2 1 
+10 
+y 
+
+
+x3 
+
+Figure 
+1: 
+Topologia 
+de 
+PMC(projeto 
+prático 
+2) 
+
+
+Utilizando o algoritmo de aprendizagem backpropagation 
+(regra Delta generalizada), com 
+as amostras de treinamento apresentadas no apêndice III, e assumindo-se também que todas 
+as saídasjá estejam normalizadas, realize as seguintes atividades: 
+
+1. Execute cinco treinamentos para a rede PMC, inicializando-se as matrizes de pesos com 
+valores apropriados em cada treinamento. Se for o caso, reinicie o gerador de números 
+aleatóriosemcadatreinamentoa fimdemodificarosseusvaloresiniciais. Utilizeafunção 
+de ativação logística(sigmóide) para todos os neurônios, com taxa de aprendizado {.} 
+de 0,1 e precisão {o} de 10-6 
+. O conjunto de treinamento está disponível no arquivo 
+dados_2.txt. 
+2. Registre os resultados finais dos cinco treinamentos na tabela 1. 
+Table 
+1: 
+Resultados 
+dos 
+treinamentos(projeto 
+prático 
+2) 
+
+
+
+Treinamento 
+Erro 
+quadrático 
+médio 
+Número 
+total 
+de 
+épocas 
+1o(T1) 
+2o(T2) 
+3o(T3) 
+4o(T4) 
+5o(T5) 
+
+
+
+3. Para aqueles dois treinamentos da tabela 1, com maiores números de épocas, trace os 
+respectivosgráficosdos valoresde erroquadrático médio{EM 
+}em relação a cada época 
+de treinamento. Imprima os dois gráficos numa mesma folha de modo não superpostos. 
+4. Fundamentado na tabela do item 2, explique de forma detalhada por que tanto o erro 
+quadrático médio como o número total de épocas variam de treinamento para treinamento. 
+5. Para todos os treinamentos efetuados no item 2, faça a validação da rede aplicando o 
+conjunto de teste fornecido na tabela 2. 
+Table 
+2: 
+Conjunto 
+de 
+padrões 
+de 
+teste(projeto 
+prático 
+2) 
+
+
+Amostra 
+x1 
+x2 
+x3 
+d 
+Y 
+T1 
+Y 
+T2 
+Y 
+T3 
+Y 
+T4 
+Y 
+T5 
+1 
+0,0611 
+0,2860 
+0,7464 
+0,4831 
+2 
+0,5102 
+0,7464 
+0,0860 
+0,5965 
+3 
+0,0004 
+0,6916 
+0,5006 
+0,5318 
+4 
+0,9430 
+0,4476 
+0,2648 
+0,6843 
+5 
+0,1399 
+0,1610 
+0,2477 
+0,2872 
+6 
+0,6423 
+0,3229 
+0,8567 
+0,7663 
+7 
+0,6492 
+0,0007 
+0,6422 
+0,5666 
+8 
+0,1818 
+0,5078 
+0,9046 
+0,6601 
+9 
+0,7382 
+0,2647 
+0,1916 
+0,5427 
+10 
+0,3879 
+0,1307 
+0,8656 
+0,5836 
+11 
+0,1903 
+0,6523 
+0,7820 
+0,6950 
+12 
+0,8401 
+0,4490 
+0,2719 
+0,6790 
+13 
+0,0029 
+0,3264 
+0,2476 
+0,2956 
+14 
+0,7088 
+0,9342 
+0,2763 
+0,7742 
+15 
+0,1283 
+0,1882 
+0,7253 
+0,4662 
+16 
+0,8882 
+0,3077 
+0,8931 
+0,8093 
+17 
+0,2225 
+0,9182 
+0,7820 
+0,7581 
+18 
+0,1957 
+0,8423 
+0,3085 
+0,5826 
+19 
+0,9991 
+0,5914 
+0,3933 
+0,7938 
+20 
+0,2299 
+0,1524 
+0,7353 
+0,5012 
+Erro 
+relativo 
+médio(%) 
+Variância 
+(%) 
+
+
+6. Fundamentado nas análises da tabela anterior, indique qual das configurações finais de 
+treinamento{T1,T2,T3,T4 ouT5} seria a mais adequadapara o sistemade ressonância 
+magnética, ou seja, qual está oferecendo a melhor generalização. 
+
+Projeto 
+Prático 
+03 
+
+
+No processaemento de bebidas, a aplicação de um determinado conservante é feita em 
+funçãoda combinaçãodequatro variáveisdetipo real,definidaspor x1 
+(teor de água), x2 
+(grau 
+de acidez), x3 
+(temperatura) e x4 
+(tensão interfacial). Sabe-se que existem apenas três tipos 
+de conservantes que podem ser aplicados, os quais são definidos por A,B e C. Em seguida 
+realizam-se ensaios em laboratório a fim de especificar qual tipo deve ser aplicado em uma 
+bebida específica. 
+Apartirde148 ensaiosexecutados emlaboratório, aequipedeengenheiros ecientistasresolveu 
+aplicar uma rede Perceptron 
+multicamadas como classificadora de padrões, visando identificar 
+qual tipo de conservante seria introduzido em determinado lote de bebidas. Por questões 
+operacionais da própria linha de produção, utilizar-se-á aqui uma rede Perceptron 
+com três 
+saídas, conforme configuração apresentada na figura 2. A padronização para a saída, a qual 
+
+y1 
+1 
+2 1 
+15 
+3 2 
+3 
+y2 
+y3 
+x1 
+x2 
+x3 
+x4 
+Figure 
+2: 
+Topologia 
+de 
+PMC(projeto 
+prático 
+2) 
+
+
+representa o conservante a ser aplicado, ficou definida de acordo com a tabela 3. 
+
+Table 
+3: 
+Padronização 
+das 
+saídas 
+da 
+rede(projeto 
+prático 
+2) 
+
+
+Tipo 
+de 
+conservante 
+y1 
+y2 
+y3 
+Tipo 
+A 
+1 
+0 
+0 
+Tipo 
+B 
+0 
+1 
+0 
+Tipo 
+C 
+0 
+0 
+1 
+
+
+Utilizando os dados de treinamento disponibilizados no arquivo dados_3.txt, execute então 
+
+otreinamentodeumaredePMC(quatroentradasetrêssaídas)quepossaclassificar, emfunção 
+apenasdosvalores medidosde x1 
+,x2 
+,x3 
+ex4 
+,qual otipode conservantequepodeseraplicado 
+em determinada bebida. Para tanto, faça as seguintes atividades: 
+
+1. Executeotreinamentodarede Perceptron,por meiodo algoritmode aprendizagem backpropagation 
+convencional, inicializando-se as matrizes de pesos com valores aleatórios 
+apropriados. Utilize afunçãodeativaçãologística(sigmoide) paratodososneurônios, 
+comtaxade aprendizado{.}de0,1 eprecisão{o}de 10-6 
+. 
+2. Efetue, em seguida, o treinamento da rede Perceptron 
+por meio do algoritmo de aprendizagem 
+backpropagation 
+com momentum, inicializando-se as matrizes de pesos com 
+valores aleatórios apropriados. Adote também a função de ativação logística para todos 
+os neurônios, com taxa de aprendizado {.} de 0,1, fator de momentum 
+{a} de 0,9 e 
+precisão{.}de 10-6 
+. 
+3. Para os dois treinamentos realizados nos itens anteriores, trace os respectivos gráficos 
+dos valoresdeerroquadrático médio{EM 
+} em função de cada época de treinamento. 
+Imprima osdoisgráficos numa mesmapáginade modo não superpostos. Meçatambém 
+o tempo de processamento envolvido com cada treinamento. 
+4. Dado que o problema se configura como um típico processo de classificação de padrões, 
+implemente então a rotina que faz o pós-processamento das saídas fornecidas pela rede 
+(valores reais)para númerosinteiros. Como sugestão, adote o critériode arredondamento 
+simétrico, isto é: 
+1 
+se yi 
+= 
+0, 5 
+
+
+yipos 
+= 
+
+
+0 
+se yi 
+< 0, 5 
+
+
+5. Faça a validação da rede aplicando o conjunto de teste fornecido na tabela 4. Forneça 
+ataxade acertos(%) entre os valoresdesejadosfrenteàquelas respostasfornecidaspela 
+rede(após opós-processamento) em relação atodos ospadrõesdeteste. 
+Table 
+4: 
+Conjunto 
+de 
+padrões 
+de 
+teste(projeto 
+prático 
+2) 
+
+
+Amostras 
+x1 
+x2 
+x3 
+x4 
+d1 
+d2 
+d3 
+pos 
+y1 
+pos 
+y2 
+pos 
+y3 
+1 
+0,8622 
+0,7101 
+0,6236 
+0,7894 
+0 
+0 
+1 
+2 
+0,2741 
+0,1552 
+0,1333 
+0,1516 
+1 
+0 
+0 
+3 
+0,6772 
+0,8516 
+0,6543 
+0,7573 
+0 
+0 
+1 
+4 
+0,2178 
+0,5039 
+0,6415 
+0,5039 
+0 
+1 
+0 
+5 
+0,7260 
+0,7500 
+0,7007 
+0,4953 
+0 
+0 
+1 
+6 
+0,2473 
+0,2941 
+0,4248 
+0,3087 
+1 
+0 
+0 
+7 
+0,5682 
+0,5683 
+0,5054 
+0,4426 
+0 
+1 
+0 
+8 
+0,6566 
+0,6715 
+0,4952 
+0,3951 
+0 
+1 
+0 
+9 
+0,0705 
+0,4717 
+0,2921 
+0,2954 
+1 
+0 
+0 
+10 
+0,1187 
+0,2568 
+0,3140 
+0,3037 
+1 
+0 
+0 
+11 
+0,5673 
+0,7011 
+0,4083 
+0,5552 
+0 
+1 
+0 
+12 
+0,3164 
+0,2251 
+0,3526 
+0,2560 
+1 
+0 
+0 
+13 
+0,7884 
+0,9568 
+0,6825 
+0,6398 
+0 
+0 
+1 
+14 
+0,9633 
+0,7850 
+0,6777 
+0,6059 
+0 
+0 
+1 
+15 
+0,7739 
+0,8505 
+0,7934 
+0,6626 
+0 
+0 
+1 
+16 
+0,4219 
+0,4136 
+0,1408 
+0,0940 
+1 
+0 
+0 
+17 
+0,6616 
+0,4365 
+0,6597 
+0,8129 
+0 
+0 
+1 
+18 
+0,7325 
+0,4761 
+0,3888 
+0,5683 
+0 
+1 
+0 
+Total 
+de 
+acertos(%) 
+
+
+

@@ -1,0 +1,7 @@
+function l = loglikehood(y, X)
+    global sigmav gfun;
+    yk = feval(gfun, X);
+    vhat = y - yk;
+    l = 
+
+end

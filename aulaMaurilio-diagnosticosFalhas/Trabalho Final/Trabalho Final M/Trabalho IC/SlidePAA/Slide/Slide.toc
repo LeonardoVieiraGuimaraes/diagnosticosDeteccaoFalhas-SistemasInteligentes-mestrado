@@ -1,0 +1,8 @@
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o e Contextualiza\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{O Algoritmo Merge-Sort}{6}{0}{2}
+\beamer@sectionintoc {3}{Recursividade e Recorr\IeC {\^e}ncia}{11}{0}{3}
+\beamer@sectionintoc {4}{An\IeC {\'a}lise de Complexidade}{13}{0}{4}
+\beamer@sectionintoc {5}{Testes do Algoritmo em M\IeC {\'a}quina Real}{23}{0}{5}
+\beamer@sectionintoc {6}{Conclus\IeC {\~a}o}{25}{0}{6}
+\beamer@sectionintoc {7}{Refer\^{e}ncias bibliogr\'{a}ficas}{27}{0}{7}

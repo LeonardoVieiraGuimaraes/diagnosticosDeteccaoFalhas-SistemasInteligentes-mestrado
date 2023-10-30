@@ -1,0 +1,3 @@
+octave --force-gui
+
+apt-cache search octave

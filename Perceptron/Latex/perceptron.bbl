@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+
+\bibitem{python}
+Numpy for matlab users.
+\newblock \url{http://wiki.scipy.org/NumPy_for_Matlab_Users}.
+\newblock acesso em 27/09/2014.
+
+\bibitem{latex2}
+Introdução ao latex.
+\newblock \url{http://latexbr.blogspot.com.br/}, 2014.
+\newblock acesso em 03/10/2014.
+
+\bibitem{redes}
+A.~Branquinho.
+\newblock Redes neurais artificiais.
+\newblock \url{https://www.youtube.com/channel/UCJMPbiRi-w6aeH_VvqlrmXw}, 2013.
+\newblock acesso em 24/09/2014.
+
+\bibitem{perceptron}
+R.~D. Maia.
+\newblock Inteligência computacional.
+\newblock \url{http://renatomaia.net/ensino/facit/inteligencia-computacional/},
+  2014.
+\newblock acesso em 25/09/2014.
+
+\bibitem{latex}
+R.~J. Santos.
+\newblock Introdução ao latex.
+\newblock \url{http://www.mat.ufmg.br/~regi/topicos/intlat.pdf}, 2002.
+\newblock acesso em 01/10/2014.
+
+\end{thebibliography}

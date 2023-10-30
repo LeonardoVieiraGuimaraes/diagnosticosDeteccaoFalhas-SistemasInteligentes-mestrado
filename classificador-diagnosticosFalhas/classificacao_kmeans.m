@@ -1,0 +1,46 @@
+% Classificacao de dados com KMEANS
+
+clc;
+
+disp('_ Classificacao de dados com KMEANS _');
+
+% determina indice dos padroes e centros de grupos
+[idc centros] = kmeans(X,2);
+
+% tamanho do conjunto de dados
+n = size(X,1);
+
+% inicializa variaveis
+TP = 0;
+FN = 0;
+FP = 0;
+TN = 0;
+
+% calcula variaveis
+for k = 1 : n
+  if ((idc(k) == 1) && (Y(k) == 1))
+    TP = TP + 1;
+  endif
+  if ((idc(k) == 1) && (Y(k) == 2))
+    FP = FP + 1;
+  endif
+  if ((idc(k) == 2) && (Y(k) == 1))
+    FN = FN + 1;
+  endif
+  if ((idc(k) == 2) && (Y(k) == 2))
+    TN = TN + 1;
+  endif
+end
+
+% calcula metricas
+disp('Acuracia (%)');
+Acc = ((TP + TN) / n) * 100
+disp('Taxa de erro (%)');
+Err = ((FP + FN) / n) * 100
+disp('Taxa de Verdadeiro Positivo (%)');
+TPr = (TP / (TP + FN)) * 100
+disp('Taxa de Falso Positivo (%)');
+FPr = (FP / (FP + TN)) * 100
+
+
+
